@@ -27,17 +27,17 @@
     <title>Gradient Background</title>
     <style>
         body {
-              /* 将渐变背景色从绿色到蓝色 */
+              /* 將漸變背景從綠色到藍色 */
             background: linear-gradient(to right, #00ff00, #0000ff);
-            /* 让渐变背景色填充整个页面 */
+            /* 讓漸變背景色填充整個頁面 */
             height: 100vh;
             margin: 0;
-            /* 添加其他样式以使内容居中 */
+            /* 添加其他樣式而使內容居中 */
             display: flex;
             justify-content: center;
             align-items: center;
         }
-        /* 样式化页面中的文本 */
+        /* 樣式化面中的文本 */
         h1 {
             color: white;
         }
@@ -47,3 +47,31 @@
     <h1>Gradient Background</h1>
 </body>
 </html>
+def check_id_length(id_number):
+    # Using len() function to get the length of the ID number
+    # 使用 len() 函數取得身分證號碼的長度
+    id_length = len(id_number)
+    
+    # Checking if the length is 10
+    # 檢查長度是否為 10
+    if id_length == 10:
+        return True
+    else:
+        return False
+
+# Example ID number
+# 範例身分證號碼
+id_number = "A123456789"
+
+# Calling the function to check the length of the ID number
+# 呼叫函數檢查身分證號碼長度
+is_valid_length = check_id_length(id_number)
+
+if is_valid_length:
+    # Output if the ID number length is correct
+    # 身分證號碼長度正確
+    print("The ID number length is correct")
+else:
+    # Output if the ID number length is incorrect
+    # 身分證號碼長度不正確
+    print("The ID number length is incorrect")
