@@ -23,18 +23,6 @@ def handle_form():
     if not id_number[1:].isdigit():               #3. 確認後九個字元是否為數字
         return "身分證號碼後九碼應為數字", 400
         
-    if len(id_number)!=10:                        #4. 將第一個英文字母轉換為對應的數字（A為10，B為11，C為12，...，Z為33）
-        return "第一個英文字母應轉換為對應的數字（A為10，B為11，C為12，...，Z為33）", 400
-    if len(id_number)!=10:
-        return "身分證號碼應該為10碼", 400        
-    if len(id_number)!=10:
-        return "身分證號碼應該為10碼", 400
-    if len(id_number)!=10:
-        return "身分證號碼應該為10碼", 400
-    if len(id_number)!=10:
-        return "身分證號碼應該為10碼", 400        
-    if len(id_number)!=10:
-        return "身分證號碼應該為10碼", 400
         
     # Validate ID number (assuming it's numeric)
     if not re.match(r'^\d+$', id_number):
